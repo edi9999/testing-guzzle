@@ -1,0 +1,12 @@
+{
+    "name": "edgar/testing-guzzle",
+    "require": {
+        "guzzle/guzzle": "*"
+    },
+    "authors": [
+        {
+            "name": "Edgar",
+            "email": "hipp.edg@gmail.com"
+        }
+    ]
+}
