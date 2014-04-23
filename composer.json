@@ -1,12 +1,18 @@
 {
-    "name": "edgar/testing-guzzle",
+    "name": "edgar/Keys",
     "require": {
-        "guzzle/guzzle": "*"
+        "guzzlehttp/guzzle": "~4.0",
+        "phpunit/phpunit": "4.*"
     },
     "authors": [
         {
             "name": "Edgar",
             "email": "hipp.edg@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "edi9999": "src/"
+        }
+    }
 }
