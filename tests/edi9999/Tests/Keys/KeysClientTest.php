@@ -16,7 +16,7 @@ class KeysClientTest extends \PHPUnit_Framework_TestCase {
     public function testThatItShouldReceiveTheKeys()
     {
         $keysClient=new KeysClient();
-        echo $keysClient->getKey("edi9999");
+        var_dump($keysClient->getKey("edi9999"));
     }
 }
  

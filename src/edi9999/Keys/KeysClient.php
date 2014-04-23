@@ -16,13 +16,15 @@ class KeysClient
 {
     function __construct()
     {
-        $this->client = new Client();
+        $this->client = new Client(
+            ['base_url' => 'https://api.github.com/']
+        );
     }
 
     function getKey($userName)
     {
-        $res = $this->client->get('https://api.github.com/users/'.$userName);
-        return $res->getBody();
+        $res = $this->client->get('/users/'.$userName.'/keys');
+        return $res->json();
     }
 
 }
